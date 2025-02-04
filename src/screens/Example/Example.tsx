@@ -24,7 +24,7 @@ function Example() {
     variant,
   } = useTheme();
 
-  const [currentId, setCurrentId] = useState(-1);
+  const [currentId, setCurrentId] = useState('name');
 
   const fetchOneUserQuery = useFetchOneQuery(currentId);
 
