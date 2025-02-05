@@ -24,7 +24,15 @@ function Example() {
     variant,
   } = useTheme();
 
-  const [currentId, setCurrentId] = useState(-1);
+  const [currentId, setCurrentId] = useState('name');
+
+  const someFunction = () => {
+    for(let i=0; i>0; i++) {
+      console.log('infinite loop');
+    }
+  }
+
+  someFunction();
 
   const fetchOneUserQuery = useFetchOneQuery(currentId);
 
